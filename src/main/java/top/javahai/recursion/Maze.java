@@ -1,10 +1,8 @@
 package top.javahai.recursion;
 
-import java.sql.SQLOutput;
-import java.util.UnknownFormatConversionException;
-import java.util.jar.JarEntry;
 
 /**
+ * 迷宫问题，递归实现
  * @author Hai
  * @date 2020/10/5 - 18:31
  */
