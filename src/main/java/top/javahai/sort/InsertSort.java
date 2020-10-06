@@ -6,6 +6,9 @@ package top.javahai.sort;
  * @date 2020/10/6 - 17:51
  */
 public class InsertSort {
+
+
+
 }
 
 
