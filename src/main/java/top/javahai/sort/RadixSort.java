@@ -72,9 +72,9 @@ public class RadixSort {
     }
     public static void testExecutionTime(){
         //生成测试数据，800000条
-        int[] arr = new int[800000];
+        int[] arr = new int[8000000];
         for (int i = 0; i < arr.length; i++) {
-            arr[i]=(int)(Math.random()*800000);
+            arr[i] = (int) (Math.random() * 8000000);
         }
         System.out.println("当前时间："+ DateUtil.getCurrentTime(new Date()));
         radixSort(arr);
