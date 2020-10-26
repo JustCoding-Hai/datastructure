@@ -35,10 +35,13 @@ public class BinaryTreeDemo {
         BinaryTree binaryTree = new BinaryTree();
         binaryTree.setRoot(root);
         System.out.println("前序遍历：");
+        //1 2 4 5 6 3 7
         root.preOrderTraversal();
         System.out.println("中序遍历：");
+        //4 2 5 1 6 3 7
         root.midOrderTraversal();
         System.out.println("后序遍历：");
+        //4 5 2 6 7 3 1
         root.postOrderTraversal();
 
         System.out.println(binaryTree.preOrderSearch(4));
