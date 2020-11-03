@@ -9,6 +9,13 @@ import java.util.Objects;
  * @create 2020/11/2 - 23:01
  **/
 public class ThreadedBinaryTreeDemo {
+    /**
+     * 1
+     * 3    6
+     * 8 10  14
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         HeroNode node1 = new HeroNode(1);
         HeroNode node2 = new HeroNode(3);
@@ -29,6 +36,9 @@ public class ThreadedBinaryTreeDemo {
 
         System.out.println(node6.getLeft());
         System.out.println(node6.getRight());
+
+        System.out.println("中序遍历线索化二叉树：");
+        threadedBinaryTree.threadedList();
 
 
     }
@@ -51,6 +61,25 @@ class ThreadedBinaryTree {
 
     public void setRoot(HeroNode root) {
         this.root = root;
+    }
+
+    /**
+     * 遍历线索化二叉树
+     */
+    public void threadedList() {
+        HeroNode node = root;
+        while (node != null) {
+            while (node.getLeftType() == 0) {
+                node = node.getLeft();
+            }
+            System.out.println(node);
+            while (node.getRightType() == 1) {
+                node = node.getRight();
+                System.out.println(node);
+            }
+            node = node.getRight();
+        }
+
     }
 
     /**
