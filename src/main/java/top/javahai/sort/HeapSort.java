@@ -22,15 +22,11 @@ public class HeapSort {
             arr[i] = (int) (Math.random() * 8000000);
 
         }
-        // 生成一个[0, 8000000) 数 }
-        System.out.println("排序前");
-        Date data1 = new Date();
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String date1Str = simpleDateFormat.format(data1);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss:SSS");
+        String date1Str = simpleDateFormat.format(new Date());
         System.out.println("排序前的时间是=" + date1Str);
         heapSort(arr);
-        Date data2 = new Date();
-        String date2Str = simpleDateFormat.format(data2);
+        String date2Str = simpleDateFormat.format(new Date());
         System.out.println("排序后的时间是=" + date2Str);
     }
 
