@@ -267,12 +267,17 @@ class SingleLinkedList{
         }
     }
 }
-//定义一个HeroNode，表示一个节点
+/**
+ * 定义一个HeroNode，表示一个节点
+ */
 class HeroNode{
     public int no;
     public String name;
     public String nickname;
-    public HeroNode next;//表示指向的下一个节点
+    /**
+     *     表示指向的下一个节点
+     */
+    public HeroNode next;
 
     public HeroNode(int no, String name, String nickname) {
         this.no = no;
